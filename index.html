@@ -20,9 +20,10 @@
 			<nav>
 				<ul>
 					<li><a href="#intro">About me</a></li>
-					<li><a href="#one">Profession Experience</a></li>
-					<li><a href="#two">Projects</a></li>
-					<li><a href="#three">Contact</a></li>
+					<li><a href="#one">Professional Experience & Research</a></li>
+					<li><a href="#two">Academic Research</a></li>
+					<li><a href="#three">Projects</a></li>
+					<li><a href="#four">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -75,8 +76,8 @@
 							<li>Researching on facial-action recognition models and body-motion recognition models to 
 								recognize possible facial expressions and different human body movements in video frames. 
 								As part of this research, experimented on unsupervised clustering deep neural networks, 
-								temporal convolution networks, space time transformer architectures and 
-								few shot-learning approaches (Prototypical Networks and Model Agnostic Meta Learning (MAML)). </li>
+								temporal convolution networks, space time transformer architectures and few shot-learning 
+								approaches (Prototypical Networks and Model Agnostic Meta Learning (MAML)). </li>
 
 							<li>Working on Motion Variational Auto-Encoders (MVAEs) to generate realistic controllable 
 								human action videos. </li>
@@ -115,12 +116,6 @@
 									<li>(iv) coreference resolution in extracting entity relationships, etc. </li>
 								</ol>
 							</li>
-							
-							<li>Developed custom monitoring metrics for each service and injected them into Prometheus
-								using Service Monitor CRD's.</li>
-
-							<li>Additionally, created Grafana dashboards to monitor services, latency, and send alerts
-								to Slack in case of service downtime.</li>
 
 							<li>Got selected to present my summer intern work in-front of executive board at Ancestry.</li>
 						</ul>
@@ -132,127 +127,36 @@
 				<!-- <a href="#" class="image"><img src="images/Exp_03.jpg" alt="" data-position="25% 25%" /></a> -->
 				<div class="content">
 					<div class="inner">
-						<h2>Sr. Software Engineer, CitiCorp, Pune, India</h2>
-						<h5>AML5th Directive</h5>
+						<h2>Software Engineer - Machine Learning and Search, Mad Street Den Inc</h2>
+						<h5>Deep Learning and Machine Learning</h5>
 						<p>
 						<ul style="list-style-type:disc;text-align: justify;">
-							<li>As part of AML5th Directive for EMEA Regulators, created a new application from scratch
-								designed and implemented it fully.</li>
-							<li>Successfully architected and implemented an Internet-facing application that spanned
-								multiple data centers using OpenShift Clusters.</li>
-							<li>Implemented load balancing using Virtual IPs (VIPs) and Wide IPs (WIPs) for increased
-								scalability and availability.</li>
-							<li>Configured VIP's, WIP's, 3DNS and API Gateway for endpoints to be exposed from DMZ to
-								services exposed in GRN.</li>
-							<li>Implemented SOAP / REST API and File Transfer (with signing and encryption of data) for
-								each Regulatory country according to their specification of the data transfer.</li>
-							<li>Involved in coordination with various teams across Citi to receive the data in
-								appropriate format, infrastructure provisioning, and configuring Firewall policies.</li>
-							<li>Led interactions with regulators, project managers, and key stakeholders to ensure
-								compliance with provided specifications for application standards.</li>
+							<li>Designed and implemented Parts of Speech (PoS), Named Entity Recognition (NER), Dependency Parser Neural Network Models; 
+								LSTM based Auto-Correction and Auto-Suggestion models to optimize text-search system at production scale.</li>
+
+							<li>Designed a document searching system which involved working with transformer models to generate search embeddings.</li>
+
+							<li>Designed a text classifier framework to classify e-commerce products using XGBoost, MLP and SVM models.</li>
+
+							<li>Experimented with XGBoost’s Learning to Rank Algorithms for fine tuning personalisation models.</li>
+
+							<li>Designed recommendation algorithms using Apache Solr's boost and filter functions based on buy and search histories.</li>
 						</ul>
 						</p>
 
-						<h5>SMS Campaign</h5>
+						<h5>Distributed Systems Engineering</h5>
 						<p>
 						<ul style="list-style-type:disc;text-align: justify;">
-							<li>Archited and implemented an end-to-end SMS Campaign Management System to run campaign's
-								for 13 APAC countries (with local language support).</li>
-							<li>Utilized Google's libphonenumber for validation of mobile numbers and reject invalid
-								numbers.</li>
-							<li>Optimization throughput to send 100k SMS's in less than 20 minutes, and record the
-								status of the SMS's for analysis.</li>
-							<li>The delivery status of SMS is tracked and recorded to identify the root cause of any
-								failures and remove the affected mobile numbers.</li>
-							<li>Regular interaction with SMS Vendor (Synch/SAP) to understand the accuracy of SMS
-								delivery
-								and other optics.</li>
-							<li>2X more download of Citi-Direct mobile app within a month, which improved business
-								largely.</li>
-							<li>Implemented user authentication and authorization using Ping Federate (SSO) and LDAP.
-							</li>
-						</ul>
-						</p>
+							<li>Core member of the team which built and tuned Apache Solr (and Zookeeper) Clusters for enabling searching and listing operations on e-commerce websites.</li>
+							
+							<li>Scaled Apache Solr’s Distributed Computing Infrastructure to handle up to 40,000 requests per minute.</li>
 
-						<h5>High-throughput SMS System</h5>
-						<p>
-						<ul style="list-style-type:disc;text-align: justify;">
-							<li>Restructured legacy SMS delivery system to deliver 1.5MM SMS to clients(enhanced
-								throughput from 38 to 63 TPS), with distributed processing of messages via IBM MQ and
-								services running in OpenShift pods, with auto-scaling to manage the load.</li>
-							<li>Whitelisted OpenShift Cluster's Node IP's for proxy connectivity to SMS Vendor system,
-								as the nodes are hosted in GreenZone Network (GRN).</li>
-							<li>Created a custom dashboard in Kibana based on the logs to display TPS, Messages sent,
-								success-failure ratio, so that Production support teams can monitor them efficiently.
-							</li>
-						</ul>
-						</p>
+							<li>Worked on building data pipelines for powering real time search requests using AWS SNS, Redis Queues, etc.</li>
 
-						<h5>Object Storage Framework</h5>
-						<p>
-						<ul style="list-style-type:disc;text-align: justify;">
-							<li>Developed a UI based Framework to upload, search and retrieve files to/from IBM Object
-								Storage (S3).</li>
-							<li>Optimized file upload and download based on file size with s3's native multi-part
-								approach.</li>
-							<li>Cost saving by 5X over 5 year period.</li>
-							<li>Hostmachines and folders to be uploaded can be configured on UI to ensure only those
-								machines can upload files from the specific folders.</li>
-							<li>Created deamon process running on the host machines, to enable automatic upload /
-								download of files that are scheduled on UI. Email notifications are sent once operation
-								is completed successfully.</li>
-							<li>Implemented SSO for user authentication and custom roles that are based on virtual
-								segregation of data in Bucket using collections (app id, country, module & environment).
-							</li>
-							<li>Metadata of the uploaded files are stored in MongoDB to enable search of files in S3
-								buckets.</li>
-						</ul>
-						</p>
+							<li>Worked on setting up and tuning of Spark clusters optimizing (Py)Spark queries to optimize data digestion pipelines.</li>
 
-						<h5>Openshift Containerization Program</h5>
-						<p>
-						<ul style="list-style-type:disc;text-align: justify;">
-							<li>Co-led Citi's Containerization journey to onboard applications to OpenShift at
-								TTS ASPAC.</li>
-							<li>Selected applications that can be migrated to container platforms, with minimum efforts,
-								by the tech stack, application architecture.</li>
-							<li>Rearchited the applications with minimum changes to fit them on Docker
-								containers, like state management, db connectivity, writing logs to sysout.</li>
-							<li>Involved in creation of secrets in CyberArk Vault, SSO Siteminder setup, and SSL for
-								application security.</li>
-							<li>Setting up of 3DNS, WIP, VIP's to Openshift Cluster for seamless PROD / COB
-								transition.</li>
-						</ul>
-
-						<h5>DevOps</h5>
-						<p>
-						<ul style="list-style-type:disc;text-align: justify;">
-							<li>Pioneered DevOps culture in the TTS (APAC region) from scratch by doing POC's.
-								Experience in building reliable build and deployment pipelines for applications with
-								minimum touch-points</li>
-							<li>Highly skilled in configuring CI/CD pipelines in TeamCity for automatic code build for
-								various file types, packaging them, upload to Artifactory and deployment via IBM
-								uDeploy.</li>
-							<li>Contributed to developing a robust DB-Build Framework to package & deploy PL/SQL changes
-								for 16 DB instances simultaneously, reducing 12-14 hours of manual to less than 20 mins
-								of automated deployment.</li>
-							<li>Developed a UI Web-portal (Nodejs & Angular) for Data Visualization on git Logs for
-								commit trends & productivity analysis of 90+ developers on 300+ repos across 8 projects
-								in BitBucket, with daily data loaded into Mongo DB.</li>
-							<li>Conducted multiple workshops (for more than 250+ members) on best practices for DevOps
-								and responding the queries.</li>
-							<li>Migrating TeamCity build pipelines to Jenkins where deployment is done via S2I basis.
+							<li>Performed database backup, synchronization and migration operations.</li>
 							</li>
-						</ul>
-						</p>
-
-						<h5>Miscellaneous</h5>
-						<p>
-						<ul style="list-style-type:disc;text-align: justify;">
-							<li>Hands-on experience on Jasper Reporting, for creating pdf reports to be sent to clients.
-							</li>
-							<li>Installed and configured TeamCity agents, plugins to improve day-to-day build
-								operations.</li>
 						</ul>
 						</p>
 					</div>
